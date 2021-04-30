@@ -7,7 +7,7 @@ width=1;
 canvas.addEventListener("mousedown",my_mousedown);
 function my_mousedown(e){
     color=document.getElementById("color").value;
-   width=document.getElementById("width").value;
+   width=document.getElementById("width_of_line").value;
 mouseEvent="mouseDown";
 }
 canvas.addEventListener("mouseup",my_mouseup);
@@ -95,6 +95,6 @@ console.log("touchmove");
         last_position_of_x = current_position_of_x; 
         last_position_of_y = current_position_of_y;
     }
-    function clearArea() { 
+    function cleararea() { 
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
      }
